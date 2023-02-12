@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daunku</title>
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="shortcut icon" href="./assets/images/fav.svg" type="image/x-icon" />
+  </head>
+  <body class="h-screen w-full">
+    <!-- Header Hero Section -->
+    <div
+      id="header-hero"
+      class="relative h-full w-full bg-cover bg-fixed bg-top bg-no-repeat"
+      style="background-image: url(./assets/images/hero.jpg)"
+    >
+      <header
+        class="stickyHeader sticky top-10 mx-auto flex h-11.5 w-header-width items-center justify-between py-2.5 px-2.5"
+      >
+        <div class="flex items-center gap-2">
+          <img src="./assets/images/logo.svg" alt="logo" class="w-8" />
+          <a id="logo" href="#" class="text-3xl font-bold text-white">Daunku</a>
+        </div>
+        <nav class="flex items-center gap-15">
+          <a class="active-menu active text-xl !leading-7 text-white" href="#">Home</a>
+          <a class="active-menu text-xl !leading-7 text-white" href="#">Shop</a>
+          <a class="active-menu text-xl !leading-7 text-white" href="#">About Us</a>
+          <a class="active-menu text-xl !leading-7 text-white" href="#">Contact</a>
+        </nav>
+        <div class="relative h-8 w-8.5">
+          <img
+            id="bag-shopping"
+            src="./assets/images/bag-shopping.svg"
+            alt=" bag-shopping-image  "
+            class="h-full w-full"
+          />
+          <span
+            id="bag-shopping-number"
+            class="absolute top-0 left-5 flex h-5.25 w-5.25 items-center justify-center rounded-full text-sm font-bold !leading-none text-daunku-dark"
+            style="background: linear-gradient(90deg, #2af598 0%, #009efd 100%)"
+            >0</span
+          >
+        </div>
+      </header>
+      <!-- Heading Section -->
+      <div class="mx-auto flex w-[1200px] flex-col items-center justify-center gap-6">
+        <h2 class="mt-30 flex select-none items-center justify-center text-center text-heading-2 font-bold text-white">
+          Bring Serenity to Your Place With Interior Plants
+        </h2>
+        <p class="text-lg text-white">
+          find your dream plant for you home decoration with us, and we will make it happen.
+        </p>
+        <form action="" class="relative">
+          <input
+            type="text"
+            name="searchBox"
+            id="searchBox"
+            placeholder="Search plant"
+            class="relative flex h-full w-full appearance-none items-start rounded-full border border-white bg-white bg-opacity-20 py-6 pl-8 pr-20 text-white outline-none placeholder:text-white"
+          />
+          <span
+            class="absolute top-2.5 right-2.5 h-12.5 w-12.5 cursor-pointer rounded-full"
+            style="background: linear-gradient(90deg, #2af598 0%, #009efd 100%)"
+          >
+            <img src="./assets/images/Vector.svg" alt="" class="translate-x-1/2 translate-y-1/2 select-none" />
+          </span>
+        </form>
+      </div>
+      <!------------>
+      <div id="productHover1" class="group absolute top-[350px] left-[60px]">
+        <div
+          class="hoverItem group relative flex h-12.5 w-12.5 cursor-pointer items-center justify-center rounded-full"
+        >
+          <span class="absolute h-4 w-4 rounded-full bg-white transition-all"></span>
+        </div>
+        <div
+          class="productCard invisible mt-3 ml-6 flex flex-col items-center justify-center rounded-2xl rounded-tl-none py-2 px-4 transition-all group-hover:visible"
+        >
+          <span class="text-xl font-bold text-white">$65.00</span>
+          <span class="text-base font-medium text-white">Dracena Fragnas</span>
+          <button
+            id="addItem"
+            class="relative mt-2 flex h-12.5 w-12.5 cursor-pointer items-center justify-center rounded-full text-2xl font-semibold text-white"
+            style="background: linear-gradient(90deg, #2af598 0%, #009efd 100%)"
+          >
+            +
+          </button>
+        </div>
+      </div>
+      <div id="productHover2" class="group absolute top-[615px] left-[430px]">
+        <div
+          class="hoverItem group relative flex h-12.5 w-12.5 cursor-pointer items-center justify-center rounded-full"
+        >
+          <span class="absolute h-4 w-4 rounded-full bg-white transition-all"></span>
+        </div>
+      </div>
+      <div id="productHover3" class="group absolute top-[600px] right-[325px]">
+        <div
+          class="hoverItem group relative flex h-12.5 w-12.5 cursor-pointer items-center justify-center rounded-full"
+        >
+          <span class="absolute h-4 w-4 rounded-full bg-white transition-all"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./main.js"></script>
+</html>
