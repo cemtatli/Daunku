@@ -1,4 +1,4 @@
-<h1 >Daunku </h1>
+<h1>🪑Daunku </h1>
 <p>Welcome to the "Portfolio" repository. This is a coded version of a previously designed interface design.</p>
 
 <h3>Only with HTML, Tailwind CSS and JS technology.</h3>
